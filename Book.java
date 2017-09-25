@@ -4,7 +4,7 @@
  * as a library system, for instance.
  *
  * @author  Lucita Fortes 
- * @version Sept. 24, 2017
+ * @version Sept. 25, 2017
  */
 class Book
 {
