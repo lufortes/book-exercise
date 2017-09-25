@@ -13,7 +13,6 @@ class Book
     private String title;
     private int pages;
     private String refNumber;
-    private int borrowed;
 
     /**
      * Set the author and title fields when this object
@@ -25,7 +24,6 @@ class Book
         title = bookTitle;
         pages = bookPages;
         refNumber = "";
-        borrowed = 0;
     }
 
     /**
@@ -68,7 +66,7 @@ class Book
      */
     public void printDetails()
     {
-        System.out.println("************************************************************");
+        System.out.println("*******************************************");
         System.out.println("Title:  " + title);
         System.out.println("Author: " + author);
         System.out.println("Pages:  " + pages);
@@ -80,8 +78,7 @@ class Book
         {
         System.out.println("Reference Number:  " + refNumber);
         }
-        System.out.println("Number of times book has been borrowed: " + borrowed);
-        System.out.println("************************************************************");
+        System.out.println("*******************************************");
     }
     /**
      * Set reference number
@@ -100,18 +97,5 @@ class Book
     {
         return refNumber;
     }
-    /**
-     * Increment number of times book has been borrowed
-     */
-    public void borrow()
-    {
-        borrowed = borrowed + 1;
-    }
-    /**
-     * Return the number of times borrowed
-     */
-    public int getBorrowed()
-    {
-        return borrowed;
-    }
+    
 }
